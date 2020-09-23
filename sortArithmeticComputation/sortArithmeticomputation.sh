@@ -20,6 +20,11 @@ echo "computation result " ${resultDict[@]}
 
 array=${resultDict[@]}
 
-for a in ${array[@]};do echo $a;done | sort -nr
+decendingResult=$(for a in ${array[@]};do echo $a;done | sort -nr);
+echo "Computation values in decending order "$decendingResult
+
+asendingResult=$(for a in ${array[@]};do echo $a;done | sort -n);
+echo "Computation values in asending order "$asendingResult
+
 
 
