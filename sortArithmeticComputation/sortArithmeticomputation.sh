@@ -20,4 +20,6 @@ echo "computation result " ${resultDict[@]}
 
 array=${resultDict[@]}
 
-echo ${array[@]}
+for a in ${array[@]};do echo $a;done | sort -nr
+
+
