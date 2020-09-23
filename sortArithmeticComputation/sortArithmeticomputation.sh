@@ -5,13 +5,13 @@ echo "This problem computes different arithmetic expressions and Sorts the resul
 declare -A resultDict
 read -p "enter three numbers " a b c
 
-resultDict["1"]=`awk 'BEGIN{printf("%0.2f", '$a' + '$b' * '$c')}'`;
+resultDict["k1"]=`awk 'BEGIN{printf("%0.2f", '$a' + '$b' * '$c')}'`;
 
-resultDict["2"]=`awk 'BEGIN{printf("%0.2f", '$a' * '$b' + '$c')}'`;
+resultDict["k2"]=`awk 'BEGIN{printf("%0.2f", '$a' * '$b' + '$c')}'`;
 
-resultDict["3"]=`awk 'BEGIN{printf("%0.2f", '$c' + '$a' / '$b')}'`;
+resultDict["k3"]=`awk 'BEGIN{printf("%0.2f", '$c' + '$a' / '$b')}'`;
 
-resultDict["4"]=`awk 'BEGIN{printf("%0.2f", '$a' % '$b' + '$c')}'`;
+resultDict["k4"]=`awk 'BEGIN{printf("%0.2f", '$a' % '$b' + '$c')}'`;
 
-echo ${!resultDict[@]}
-echo ${resultDict[@]}
+echo "keys " ${!resultDict[@]}
+echo "compute result " ${resultDict[@]}
