@@ -23,9 +23,11 @@ echo "computation result " ${resultDict[@]}
 
 array=${resultDict[@]}
 
+#display result of array in descending order
 decendingResult=$(for a in ${array[@]};do echo $a;done | sort -nr);
 echo "Computation values in descending order "$decendingResult
 
+#display result of array in Ascending order
 asendingResult=$(for a in ${array[@]};do echo $a;done | sort -n);
 echo "Computation values in ascending order "$asendingResult
 
