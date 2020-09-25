@@ -10,11 +10,8 @@ read -p "enter three numbers " a b c
 
 #here k1, k2, k3 and k4 represents key for dictionary
 resultDict["k1"]=`awk 'BEGIN{printf("%0.2f", '$a' + '$b' * '$c')}'`;
-
 resultDict["k2"]=`awk 'BEGIN{printf("%0.2f", '$a' * '$b' + '$c')}'`;
-
 resultDict["k3"]=`awk 'BEGIN{printf("%0.2f", '$c' + '$a' / '$b')}'`;
-
 resultDict["k4"]=`awk 'BEGIN{printf("%0.2f", '$a' % '$b' + '$c')}'`;
 
 echo "keys " ${!resultDict[@]}
